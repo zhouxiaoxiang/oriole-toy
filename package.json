@@ -1,0 +1,41 @@
+{
+  "name": "oriole-toy",
+  "version": "0.0.1",
+  "description": "only a toy.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development DEBUG=oriole-toy:* webpack --watch",
+    "build": "NODE_ENV=production webpack",
+    "test": "npm run unit-test && npm run e2e-test",
+    "test-prod": "NODE_ENV=production npm run unit-test && npm run e2e-test",
+    "unit-test": "jest __tests__/.*.spec.js --silent",
+    "e2e-test": "jest __e2e-tests__ --runInBand --silent",
+    "lint": "eslint --quiet -f codeframe src"
+  },
+  "pre-commit": [
+    "test-prod"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhouxiaoxiang/oriole-toy"
+  },
+  "keywords": [
+    "oriole-toy"
+  ],
+  "author": "Eric Zhou",
+  "license": "MIT",
+  "homepage": "https://zhouxiaoxiang.top",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "webpack": "^4.16.5",
+    "webpack-chrome-extension-reloader": "^0.8.3",
+    "webpack-cli": "^3.1.0",
+    "zip-folder": "^1.0.0"
+  },
+  "standard": {
+    "globals": [
+      "chrome"
+    ]
+  }
+}
