@@ -2,5 +2,5 @@
 
 ## Usage
 
-- install oriole-toy.crx
+- install oriole-toy into chrome
 - `<button id='eric_button'>click</button>`
