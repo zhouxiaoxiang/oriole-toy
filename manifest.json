@@ -1,6 +1,7 @@
 {
     "name": "oriole-toy",
     "version": "0.0.1",
+    "author": "Eric Zhou",
     "manifest_version": 2,
     "description": "only a toy.",
     "permissions": [
